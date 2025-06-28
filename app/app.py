@@ -138,7 +138,7 @@ if page == 'Prediction':
             
             ax.pie([prediction_proba[0][1], 1-prediction_proba[0][1]], 
                    startangle=90, counterclock=False,
-                   colors=[cmap(prediction_proba[0][1]), 'white'],
+                   colors=[cmap(prediction_proba[0][1]), 'gray'],
                    wedgeprops=dict(width=0.3, edgecolor='w'))
             
             circle = plt.Circle((0,0), 0.7, color='white')
